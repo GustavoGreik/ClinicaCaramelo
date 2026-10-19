@@ -1,0 +1,6 @@
+@model Tutor
+@{ ViewData["Title"] = "Novo tutor"; }
+<h1 class="h3 mb-3">Cadastrar tutor</h1><div class="card border-0 shadow-sm"><div class="card-body">
+<form asp-action="Create" method="post"><partial name="_Form" model="Model" /><button class="btn btn-caramelo">Salvar</button> <a asp-action="Index" class="btn btn-outline-secondary">Cancelar</a></form>
+</div></div>
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }

@@ -1,0 +1,8 @@
+@model Consulta
+<div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+<div class="mb-3"><label asp-for="AnimalId" class="form-label"></label><select asp-for="AnimalId" asp-items="ViewBag.AnimalId" class="form-select"><option value="">Selecione um animal</option></select><span asp-validation-for="AnimalId" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="VeterinarioId" class="form-label"></label><select asp-for="VeterinarioId" asp-items="ViewBag.VeterinarioId" class="form-select"><option value="">Selecione um veterinário</option></select><span asp-validation-for="VeterinarioId" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="DataHora" class="form-label"></label><input asp-for="DataHora" class="form-control" type="datetime-local" /><span asp-validation-for="DataHora" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Motivo" class="form-label"></label><input asp-for="Motivo" class="form-control" /><span asp-validation-for="Motivo" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Observacoes" class="form-label"></label><textarea asp-for="Observacoes" class="form-control" rows="3"></textarea><span asp-validation-for="Observacoes" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Status" class="form-label"></label><select asp-for="Status" class="form-select"><option>Agendada</option><option>Concluída</option><option>Cancelada</option></select><span asp-validation-for="Status" class="text-danger"></span></div>
